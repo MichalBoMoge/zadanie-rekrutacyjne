@@ -29,5 +29,5 @@ chat_completion = client.chat.completions.create(
     
 )
 resposne = chat_completion.choices[0].message.content
-with open("artykul.html","w")as file:
+with open("artykul.html", "w", encoding="utf-8")as file:
     file.write(resposne)
